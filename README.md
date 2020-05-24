@@ -55,6 +55,14 @@ const messages = {
 It's going to transform `Hello {num, number}` to `Ⓗⓔⓛⓛⓞ {ⓝⓤⓜ, ⓝⓤⓜⓑⓔⓡ}`, 
 not `Ⓗⓔⓛⓛⓞ {num, number}` like we want.
 
+
+
+
+
+<br/><br/>
+
+## Tougher example
+
 `I am a {gender, select, male {boy} female {girl}}` should remove `gender`, 
 `select`, `male`, and `female` from consideration, because they're symbols, but 
 translate `I am a`, `boy`, and `girl`.
