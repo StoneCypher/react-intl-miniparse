@@ -132,6 +132,9 @@ const messages = {
 It's going to transform `Hello {num, number}` to `Ⓗⓔⓛⓛⓞ {ⓝⓤⓜ, ⓝⓤⓜⓑⓔⓡ}`, 
 not `Ⓗⓔⓛⓛⓞ {num, number}` like we want.
 
+That is to say, we don't want to transform every character; we only want to 
+transform the parts that represent user text.
+
 
 
 
