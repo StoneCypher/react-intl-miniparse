@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/StoneCypher/react-intl-miniparse/issues"
   },
-  "homepage": "https://github.com/StoneCypher/react-intl-miniparse#readme"
+  "homepage": "https://github.com/StoneCypher/react-intl-miniparse#readme",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
 }
