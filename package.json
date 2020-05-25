@@ -1,0 +1,19 @@
+{
+  "name": "react-intl-miniparse",
+  "version": "0.1.0",
+  "description": "Do a craptacular job of parsing the react-intl templates, so that you can do text \r transforms without transforming the template controls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/react-intl-miniparse.git"
+  },
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/react-intl-miniparse/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/react-intl-miniparse#readme"
+}
