@@ -4,6 +4,11 @@
   "description": "Do a craptacular job of parsing the react-intl templates, so that you can do text \r transforms without transforming the template controls",
   "main": "index.js",
   "scripts": {
+    "rmtmp": "rm -f src/ts/parser.js",
+    "clean": "rimraf -f docs && rimraf -f dist && mkdir docs && npm run rmtmp",
+    "peg": "pegjs -o src/ts/parser.js -O size src/peg/parser.pegjs",
+    "typescript": "tsc --build tsconfig.json",
+    "build": "npm run clean && npm run peg && npm run typescript",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +22,11 @@
   },
   "homepage": "https://github.com/StoneCypher/react-intl-miniparse#readme",
   "devDependencies": {
+    "pegjs": "^0.10.0",
+    "rimraf": "^3.0.2",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.5"
   }
 }

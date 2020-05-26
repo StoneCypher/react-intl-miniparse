@@ -6,7 +6,7 @@
     "outDir": "./dist/es6/",                  /* Redirect output structure to the directory. */
     "rootDir": "./src/ts/",                   /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "allowJs": true,                          /* Allow javascript files to be compiled. */
-    "checkJs": true,                          /* Report errors in .js files. */
+    "checkJs": false,                         /* Report errors in .js files. */
     "removeComments": true,                   /* Do not emit comments to output. */
     "strict": true,                           /* Enable all strict type-checking options. */
     "noImplicitAny": true,                    /* Raise error on expressions and declarations with an implied 'any' type. */
