@@ -1,14 +1,16 @@
 {
   "name": "react-intl-miniparse",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "Do a craptacular job of parsing the react-intl templates, so that you can do text \r transforms without transforming the template controls",
   "main": "index.js",
   "scripts": {
     "rmtmp": "rm -f src/ts/parser.js",
-    "clean": "rimraf -f docs && rimraf -f dist && mkdir docs && npm run rmtmp",
-    "peg": "pegjs -o src/ts/parser.js -O size src/peg/parser.pegjs",
+    "clean": "rimraf -f docs && rimraf -f build && rimraf -f dist && mkdir docs && mkdir dist && mkdir build",
+    "peg": "pegjs -o build/parser.js -O size src/peg/parser.pegjs",
+    "rollup": "rollup -c",
     "typescript": "tsc --build tsconfig.json",
-    "build": "npm run clean && npm run peg && npm run typescript",
+    "dist": "cp build/rim.bundle.js dist/ && cp build/es6/src/ts/rim.d.ts dist/",
+    "build": "npm run clean && npm run peg && npm run typescript && npm run rollup && npm run dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   "devDependencies": {
     "pegjs": "^0.10.0",
     "rimraf": "^3.0.2",
+    "rollup": "^2.10.9",
     "typescript": "^3.9.3"
   },
   "dependencies": {
