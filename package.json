@@ -27,7 +27,7 @@
   "devDependencies": {
     "pegjs": "^0.10.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.79.2",
+    "rollup": "^2.80.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-replace": "^2.2.0",
